@@ -246,4 +246,5 @@ class Student:
 
 
 student = Student(1, 'Evgen', 'qwe@qwe.qwe')
-print(getattr(student, 'student_email'))
+email = getattr(student, 'student_email')
+print(email)
