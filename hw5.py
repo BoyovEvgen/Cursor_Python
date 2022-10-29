@@ -240,12 +240,14 @@ class Student:
     id = 0
     name = ""
 
-    def __init__(self, id, name, email):
+    def __init__(self, id, name):
         self.id = id
         self.name = name
-        self.student_email = email
+        # self.student_email = email
 
 
-student = Student(1, 'Evgen', 'qwe@qwe.qwe')
+student = Student(1, 'Evgen')
+setattr(student, 'student_email', 'qwe@qwe.com')
+print(student.__dict__)
 email = getattr(student, 'student_email')
 print(email)
