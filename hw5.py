@@ -220,7 +220,8 @@ class Person:
 
 
 my_person = Person
-my_person.age = 30
+# my_person.age = 30
+setattr(my_person, 'age', 30)
 print(my_person.age)
 my_person_2 = Person
 print(my_person_2.age)
