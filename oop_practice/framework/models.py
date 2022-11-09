@@ -1,18 +1,26 @@
 import json
 from abc import ABC
+import os
+import logging
 
 
 class Model(ABC):
     file = "default.json"
 
-    # def __repr__(self):
-    #     return self.__dict__  #Додав для відображення данних об'єкта в консолі, та скорочення кількості принтів.
-
     @staticmethod
     def get_data(path):
-        file = open(path, "r")
-        data = json.loads(file.read())
-        file.close()
+        try:
+            file = open(path, "r")
+            data = json.loads(file.read())
+            file.close()
+        except FileNotFoundError as e:
+            logging.warning(e)
+            if not os.path.exists("database"):
+                os.mkdir("database")
+            with open(path, 'w+') as file:
+                file.write('[]')
+                file.seek(0)
+                data = json.loads(file.read())
         return data
 
     def save(self):
@@ -27,9 +35,19 @@ class Model(ABC):
 
     @staticmethod
     def save_data_to_file(data, path):
-        file = open(path, "w")
-        file.write(json.dumps(data))
-        file.close()
+        try:
+            file = open(path, "w")
+            file.write(json.dumps(data))
+            file.close()
+        except FileNotFoundError as e:
+            logging.warning(e)
+            if not os.path.exists("database"):
+                logging.warning("Folder database don't exist")
+                os.mkdir("database")
+
+            with open(path, "w") as file:
+                file.write(json.dumps(data))
+                logging.info("File created")
 
     @classmethod
     def get_all(cls):
@@ -42,8 +60,7 @@ class Model(ABC):
         for instance in instances:
             if instance["id"] == id:
                 return instance
-        else:
-            return '\nId is not in database\n'  #додав для виключення помилки, якщо введений ID відсутній в базі.
+        raise ValueError("Id {} is not in database {}")
 
     @classmethod
     def delete(cls, id):
@@ -53,3 +70,20 @@ class Model(ABC):
                 del instances[i]
                 break
         cls.save_data_to_file(instances, "database/" + cls.file)
+
+    @staticmethod
+    def get_int_num_from_user(text):
+        """
+        Цей метод створений щоб прийняти від користувача вибір, в вигляді числа.
+        Якщо користувач вводить не числове значення, відловлюється помилка
+        та рекурсивно функція викликає сама себе для повторного вводу.
+        :param text:
+        :return: int
+        """
+        try:
+            res = int(input(text))
+            return res
+        except ValueError as e:
+            logging.error(e)
+            print('\nInput error. Enter a numeric value\n')
+            return Model.get_int_num_from_user(text)
