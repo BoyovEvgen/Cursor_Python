@@ -1,7 +1,6 @@
 import os
 import sys
 import pytest
-
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 from signers import Signer
 
@@ -41,4 +40,8 @@ def test_jwt_decode(input_data, output_data):
 def test_itsdangerous_decode(input_data, output_data):
     assert signer.itsdangerous_decode(input_data) == output_data
 
+
+def test_jwt_encode_no_valid_input():
+    with pytest.raises(TypeError):
+        signer.jwt_encode('name')
 
