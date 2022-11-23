@@ -1,0 +1,6 @@
+23-Nov-22 18:47:44 - INFO - the function <my_func> accepted the following values:(4, 4, 4) | {'a': 3, 'b': 'c'}, and return 6
+23-Nov-22 18:48:42 - INFO - the function <my_func> accepted the following values:(2, 3, 5) | {}, and return 6
+23-Nov-22 19:19:04 - INFO - the function <my_func> accepted the following values:(4, 4, 4) | {'a': 3, 'b': 'c'}, and return 6
+23-Nov-22 19:20:55 - INFO - the function <my_func> accepted the following values:(4, 4, 4) | {'a': 3, 'b': 'c'}, and return 6
+23-Nov-22 19:24:20 - INFO - the function <my_func> accepted the following values:(4, 4, 4) | {'a': 3, 'b': 'c'}, and return 6
+23-Nov-22 19:24:43 - INFO - the function <my_func> accepted the following values:(4, 4, 4) | {'a': 3, 'b': 'c'}, and return 6
