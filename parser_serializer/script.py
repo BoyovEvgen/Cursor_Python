@@ -41,8 +41,10 @@ def calc_file_in_dir(path):
 
 def get_last_file(path):
     files_path = get_list_of_path_file(path)
-    min_old = min(time.ctime(os.path.getmtime(file)) for file in files_path)
-    print(min_old)
+    min_old_file = min(files_path, key=lambda f_p: time.ctime(os.path.getmtime(f_p)))
+    min_old_time = min(time.ctime(os.path.getmtime(file)) for file in files_path)
+    print(min_old_time)
+    print(min_old_file)
 
 
 def get_list_of_path_file(path):
