@@ -1,0 +1,10 @@
+{
+    "file.txt": {
+        "count_open": 16,
+        "last_time_opened": "05/11/2022 00:10:41"
+    },
+    "logs.txt": {
+        "count_open": 10,
+        "last_time_opened": "05/11/2022 00:30:03"
+    }
+}
