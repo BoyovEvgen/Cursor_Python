@@ -1,0 +1,72 @@
+09-Nov-22 21:34:16 - INFO - Menu printed
+09-Nov-22 21:34:54 - INFO - Menu printed
+09-Nov-22 21:36:35 - INFO - Menu printed
+09-Nov-22 21:36:43 - INFO - Menu printed
+09-Nov-22 21:38:18 - ERROR - invalid literal for int() with base 10: 'sd'
+09-Nov-22 21:38:39 - INFO - Menu printed
+09-Nov-22 21:44:16 - INFO - Menu printed
+09-Nov-22 21:51:02 - INFO - Menu printed
+09-Nov-22 21:51:29 - ERROR - Id is not in database
+09-Nov-22 21:51:29 - INFO - Menu printed
+09-Nov-22 21:52:36 - ERROR - Id is not in database
+09-Nov-22 21:52:36 - INFO - Menu printed
+09-Nov-22 21:58:31 - INFO - Menu printed
+09-Nov-22 21:58:37 - ERROR - Id %d is not in database %s
+09-Nov-22 21:58:37 - INFO - Menu printed
+09-Nov-22 22:00:04 - INFO - Menu printed
+09-Nov-22 22:03:33 - INFO - Menu printed
+09-Nov-22 22:03:39 - ERROR - Id %35d is not in database %salons
+09-Nov-22 22:03:39 - INFO - Menu printed
+09-Nov-22 22:05:41 - INFO - Menu printed
+09-Nov-22 22:05:44 - ERROR - Id 35 is not in database salon
+09-Nov-22 22:05:44 - INFO - Menu printed
+09-Nov-22 22:09:54 - INFO - Menu printed
+09-Nov-22 22:10:18 - ERROR - invalid literal for int() with base 10: 'df'
+09-Nov-22 22:11:27 - ERROR - Id 35 is not in database Plant
+09-Nov-22 22:11:27 - INFO - Menu printed
+09-Nov-22 23:16:23 - INFO - Menu printed
+09-Nov-22 23:16:31 - WARNING - [Errno 2] No such file or directory: 'database/plants.json'
+09-Nov-22 23:16:31 - INFO - Menu printed
+09-Nov-22 23:17:38 - WARNING - [Errno 2] No such file or directory: 'database/salon.json'
+09-Nov-22 23:17:38 - ERROR - Database SALON is empty
+09-Nov-22 23:18:31 - INFO - Menu printed
+09-Nov-22 23:21:44 - INFO - Menu printed
+09-Nov-22 23:21:57 - ERROR - invalid literal for int() with base 10: 'ew'
+09-Nov-22 23:22:22 - ERROR - invalid literal for int() with base 10: ''
+09-Nov-22 23:22:45 - ERROR - Id {} is not in database {}
+09-Nov-22 23:22:45 - INFO - Menu printed
+09-Nov-22 23:37:16 - INFO - Menu printed
+09-Nov-22 23:37:40 - ERROR - Id 1 is not in database Plant
+09-Nov-22 23:37:40 - WARNING - [Errno 2] No such file or directory: 'database/employees.json'
+09-Nov-22 23:37:40 - ERROR - Not a valid email address! Email: test
+09-Nov-22 23:37:40 - INFO - Menu printed
+09-Nov-22 23:40:26 - INFO - Menu printed
+09-Nov-22 23:40:57 - ERROR - Id 1 is not in database Plant
+09-Nov-22 23:55:34 - INFO - Menu printed
+09-Nov-22 23:56:23 - ERROR - Id 1 is not in database Plant
+09-Nov-22 23:56:23 - INFO - Menu printed
+09-Nov-22 23:57:56 - INFO - Menu printed
+09-Nov-22 23:58:13 - INFO - Menu printed
+09-Nov-22 23:59:07 - ERROR - Not a valid email address! Email: test
+09-Nov-22 23:59:07 - INFO - Menu printed
+09-Nov-22 23:59:35 - INFO - Menu printed
+10-Nov-22 00:04:57 - INFO - Menu printed
+10-Nov-22 00:05:37 - INFO - save new Plant
+10-Nov-22 00:05:37 - INFO - Menu printed
+10-Nov-22 00:05:59 - INFO - save new Salon
+10-Nov-22 00:05:59 - INFO - Menu printed
+10-Nov-22 00:06:46 - ERROR - Id 7 is not in database Employee
+10-Nov-22 00:06:46 - INFO - Menu printed
+10-Nov-22 00:07:17 - INFO - Menu printed
+10-Nov-22 00:07:40 - INFO - Menu printed
+10-Nov-22 00:08:02 - INFO - Menu printed
+10-Nov-22 00:18:49 - INFO - Menu printed
+10-Nov-22 00:19:25 - INFO - save new Salon
+10-Nov-22 00:19:25 - INFO - Menu printed
+10-Nov-22 00:19:50 - INFO - Menu printed
+10-Nov-22 00:19:55 - INFO - save new Salon
+10-Nov-22 00:19:55 - INFO - Menu printed
+10-Nov-22 00:32:57 - INFO - delete Salon
+10-Nov-22 00:32:57 - INFO - Menu printed
+10-Nov-22 00:33:28 - INFO - delete Salon
+10-Nov-22 00:33:28 - INFO - Menu printed
